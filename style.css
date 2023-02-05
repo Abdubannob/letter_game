@@ -1,0 +1,238 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+
+.container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 100px;
+    justify-content: space-between;
+    gap: 60px;
+}
+.output{
+    display: flex;
+    gap: 20px;
+}
+input{
+    width: 300px;
+    padding: 10px;
+}
+button{
+    padding: 10px;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.checking{
+    display: flex;
+    gap: 40px;
+    
+
+}
+.inf{
+    border: 1px solid skyblue;
+}
+input{
+    outline: none;
+    border: none;
+    color: black;
+}
+.btn{
+    border: none;
+    border-left: 1px solid skyblue;
+    padding: 11px;
+}
+button:hover{
+    background-color: rgb(95, 177, 209);
+}
+button{
+    border: none;
+    background-color: skyblue;
+}
+.btns{
+    width: 200px;
+    margin: auto;
+}
+.number{
+    width: 50px;
+    height: 26px;
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+}
+.circle{
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 24px;
+    height: 22px;
+    background-color: skyblue;
+    border-radius: 28px;
+    transition: all .2s linear;
+    opacity: 1;
+}
+.check{
+    display: none;
+}
+#checkOne:checked ~.number .circle {
+    top: 1px;
+    left: 22px;
+}
+#checkOne:checked ~.number  {
+   background-color: rgb(119, 110, 252);
+}
+#checkTwo:checked ~.number .circle {
+    top: 1px;
+    left: 22px;
+}
+#checkTwo:checked ~.number  {
+   background-color: rgb(119, 110, 252);
+}
+#checkThree:checked ~.number .circle {
+    top: 1px;
+    left: 22px;
+}
+#checkThree:checked ~.number  {
+   background-color: rgb(119, 110, 252);
+}
+
+.input{
+    display: flex;
+
+}
+.inputs{
+   width: 320px;
+    padding: 10px;
+    border: 1px solid skyblue;
+}
+
+.screen{
+    
+    width: 450px;
+    height: 100px;
+    border: 1px solid red;
+    display: flex;
+ justify-content: center;
+    border-bottom: none;
+}
+.out{
+    display: flex;
+    flex-direction: column;
+}
+.screentwo{
+    width: 450px;
+    height: 100px;
+    border: 1px solid red;
+    border-top: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: blue;
+    z-index: 9;
+}
+h3 a {
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+  }
+h3 a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+  }
+h3 a:hover::before {
+    width: 10%;
+    filter: drop-shadow(0 0 25px var(--clr))
+  }
+h3 .as:hover::before {
+    width: 10%;
+    filter: drop-shadow(0 0 25px var(--clr))
+  }
+
+  #checkThree:checked ~ h3 .as  {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+    width: 16%;
+    filter: drop-shadow(0 0 25px var(--clr))
+ }
+ 
+ #checkTwo:checked ~ h3 .as  {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+    width: 16%;
+    filter: drop-shadow(0 0 25px var(--clr))
+ }
+  
+ #checkOne:checked ~ h3 .as  {
+    
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+    width: 16%;
+    filter: drop-shadow(0 0 25px var(--clr))
+ }
+
+ 
+h4 a {
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+  }
+h4 a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+  }
+h4 a:hover::before {
+    width: 23%;
+    filter: drop-shadow(0 0 25px var(--clr))
+  }
+/* h4 .as:hover::before {
+    width: 25%;
+    filter: drop-shadow(0 0 25px var(--clr))
+  } */

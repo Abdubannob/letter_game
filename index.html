@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Game</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="output">
+            <div class="inf" id="unf">
+                <input type="text" readonly id="input">
+                <button class="btn" id="copy" onclick="coperating(this)">Copy</button>
+            </div>
+            <button id="del" onclick="dele(this)">Delete</button>
+        </div>
+        <div class="out">
+            <div class="screen" id="screen">
+                <h4  style="--clr:#dc00d4">  <a href="#" data-text="&nbsp;O'yinimizga&nbsp;Xush&nbsp;Kelibsiz&nbsp;">&nbsp;O'yinimizga&nbsp;Xush&nbsp;Kelibsiz&nbsp;</a></h4>
+            </div>
+            <div class="screentwo" id="scrs"></div>
+        </div>
+        
+        <div class="output">
+            <div class="input">
+                <input type="text" id="inp" class="inputs">
+                <button id="add" onclick="Adding(this)">Add</button>
+            </div>
+            <button id="del" onclick="dele(this)">Delete</button>
+        </div>
+        <span id="rangevalue">1</span>
+        <input type="range" id="ranges" min="1" max="6" value="1" step="1">
+        <div class="mid">
+            <div class="checking">
+                <input type="checkbox" id="checkOne" class="check">
+                <label for="checkOne" class="number">
+                    <div class="circle">
+    
+                    </div>
+                </label>
+                <h3 style="--clr:#00ade1"> <a href="#" class="as" data-text="&nbsp;Number&nbsp;">&nbsp;Number&nbsp;</a></h3>
+               
+            </div>
+            <div class="checking">
+                <input type="checkbox" id="checkTwo" class="check">
+                <label for="checkTwo" class="number">
+                    <div class="circle">
+    
+                    </div>
+                </label>
+                <h3 style="--clr:#ffdd1c"> <a href="#" class="as" data-text="&nbsp;Letter&nbsp;">&nbsp;Letter&nbsp;</a></h3>
+            </div>
+            <div class="checking">
+                <input type="checkbox" id="checkThree" class="check">
+                <label for="checkThree" class="number">
+                    <div class="circle">
+    
+                    </div>
+                </label>
+                <h3 style="--clr:#00dc82"> <a href="#" class="as" data-text="&nbsp;Fruit&nbsp;">&nbsp;Fruit&nbsp;</a></h3>
+
+
+                
+            </div>
+    
+        </div>
+        
+        <button class="btns" onclick="ItemCreate(this)">GENERATE</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
